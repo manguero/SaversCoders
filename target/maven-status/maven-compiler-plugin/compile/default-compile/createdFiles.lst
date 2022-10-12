@@ -1,0 +1,6 @@
+Controlador\OnlineStore.class
+Modelo\Articulos.class
+Modelo\Clientes.class
+Modelo\ClientesPremium.class
+Modelo\Pedidos.class
+Modelo\ClientesEtandard.class
