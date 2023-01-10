@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLMostrarClienteController">
+   <children>
+      <TableView fx:id="table" layoutX="16.0" layoutY="44.0" prefHeight="267.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="tvNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="tvDomicilio" prefWidth="95.0" text="Domicilio" />
+          <TableColumn fx:id="tvEmail" prefWidth="149.0" text="Email" />
+          <TableColumn fx:id="tvNif" prefWidth="112.0" text="NIF" />
+          <TableColumn fx:id="tvTipoCliente" prefWidth="142.0" text="Tipo Cliente" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAtras" layoutX="259.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnAtrasClicado" prefHeight="25.0" prefWidth="88.0" text="Atras" />
+      <Text layoutX="251.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado de clientes" />
+    <Button fx:id="btnEliminar" layoutX="524.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnEliminarClicado" text="Eliminar" />
+   </children>
+</AnchorPane>

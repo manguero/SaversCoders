@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLMostrarArticuloController">
+   <children>
+      <Button fx:id="btnAtras" layoutX="278.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAtrasMostrarArticuloClicado" text="Atras" />
+      <TableView fx:id="tableArticulo" layoutX="14.0" layoutY="48.0" prefHeight="288.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="tvCodigoArticulo" prefWidth="64.0" text="Código" />
+          <TableColumn fx:id="tvDescripcionArticulo" prefWidth="192.0" text="Descripción" />
+            <TableColumn fx:id="tvPrecioVentaArticulo" text="Precio Venta" />
+            <TableColumn fx:id="tvGastosEnvioArticulo" prefWidth="114.0" text="Gastos Envio" />
+            <TableColumn fx:id="tvTiempoEnvioArticulo" prefWidth="121.0" text="Tiempo Envio" />
+        </columns>
+      </TableView>
+      <Text layoutX="249.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado de articulos" />
+      <Button fx:id="btnEliminarArticulo" layoutX="527.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnEliminarArticuloClicado" text="Eliminar" />
+   </children>
+</AnchorPane>

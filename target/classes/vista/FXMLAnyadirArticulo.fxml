@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLAnyadirArticuloController">
+   <children>
+      <Button fx:id="btnAceptar" layoutX="206.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnAceptarArticuloClicado" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="372.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnCancelarClicado" text="Cancelar" />
+      <Label layoutX="166.0" layoutY="67.0" text="Código" />
+      <Label layoutX="166.0" layoutY="109.0" text="Descripción" />
+      <Label layoutX="165.0" layoutY="149.0" text="Precio Venta" />
+      <Label layoutX="163.0" layoutY="193.0" text="Gastos Envio" />
+      <Label layoutX="163.0" layoutY="238.0" text="Tiempo Envio" />
+      <TextField fx:id="tfCodigoArticulo" layoutX="289.0" layoutY="63.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="tfPrecioVentaArticulo" layoutX="289.0" layoutY="145.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="tfDescripcionArticulo" layoutX="289.0" layoutY="105.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="tfGastosEnvioArticulo" layoutX="289.0" layoutY="189.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="tfTiempoEnvioArticulo" layoutX="289.0" layoutY="234.0" prefHeight="25.0" prefWidth="187.0" />
+      <Text layoutX="218.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AÑADIR UN ARTICULO NUEVO" />
+   </children>
+</AnchorPane>
